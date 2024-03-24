@@ -1,6 +1,8 @@
 import {AiOutlineClose, AiOutlineMenu, AiOutlineShoppingCart} from 'react-icons/ai'
 import React,{useState} from 'react'
 
+import logo from '../assets/logocolor.png';
+
 const Navbar = ({toggleCart}) => {
   const [nav,setNav]=useState(false)
   const handleNav=() => { 
@@ -9,7 +11,7 @@ const Navbar = ({toggleCart}) => {
   return (
     <div className=' text-black h-[80px] max-w-[1600px] mx-auto flex justify-between items-center'>
 
-      <div className='text-xl md:text-3xl font-extrabold primary-color ml-4'><img className=' h-12 logo' src='../../src/assets/logocolor.png'/></div>
+      <div className='text-xl md:text-3xl font-extrabold primary-color ml-4'><img className=' h-12 logo' src={logo}/></div>
       
       <div className='hidden sm:flex gap-3 md:gap-6 mr-4'>
         <button className=' rounded-lg before:ease-in relative h-8 w-20 overflow-hidden border border-orange-500 bg-primary-color text-white shadow-2xl'>
