@@ -27,7 +27,7 @@ const Navbar = ({toggleCart}) => {
         <li className='p-5'><a href='#download'>Download</a></li>
       </ul>
 
-      <div onClick={handleNav} className='block md:hidden mr-6 z-20'>
+      <div onClick={handleNav} className='block md:hidden mr-6 z-10'>
         {nav? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
       </div>
 
